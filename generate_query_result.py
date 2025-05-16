@@ -37,4 +37,4 @@ GROUP BY
 ORDER BY
     l_returnflag,
     l_linestatus
-) TO \'q01.arrow\'''')
+) TO \'q01.arrows\'''')
