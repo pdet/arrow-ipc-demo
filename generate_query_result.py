@@ -7,15 +7,15 @@ con.execute("INSTALL tpch")
 con.execute("LOAD tpch")
 
 
-con.execute("CALL DBGEN(sf=1)")
+con.execute("CALL dbgen(sf=1)")
 
 
-con.execute("INSTALL arrow")
+con.execute("INSTALL arrow FROM community")
 
 con.execute("LOAD arrow")
 
 
-# Store query 01 result on an arrow file
+# Store Query 01 result in an Arrow file
 con.execute('''COPY (SELECT
     l_returnflag,
     l_linestatus,

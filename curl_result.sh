@@ -1,1 +1,1 @@
-curl -s http://localhost:8008/q01_result.arrows | duckdb -c "INSTALL arrow; LOAD arrow; from read_arrow('/dev/stdin')"
+curl -s http://localhost:8008/q01.arrows | duckdb -c "INSTALL arrow FROM community; LOAD arrow; FROM read_arrow('/dev/stdin')"
